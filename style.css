@@ -6,7 +6,14 @@ body{
     background-color: #f6f6f6;
 }
 .image-container{
-    background-image: url(photo.jpg);
+
+    background-image:
+                linear-gradient(45deg,
+                    rgba(245, 70, 66, 0.75),
+                    rgba(8, 83, 156, 0.75)), 
+                      url(photo.jpg);
+            
+    /* background-image: url(photo.jpg), linear-gradient(blue, #d13531); */
     background-size: cover;
     object-fit: cover;
     height: 40vh;
@@ -19,7 +26,7 @@ body{
     width:60%;
     max-width: 100%;
     position:absolute;
-    left: 50%;
+    left: 50%;  
     transform: translateX(-50%);
     top: 23%;
 }
